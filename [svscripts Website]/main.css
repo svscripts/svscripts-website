@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+
+html::-webkit-scrollbar {
+    width: 10px;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: #a90000;
+    border-radius: 10px;
+}
+html::-webkit-scrollbar-track {
+    border-radius: 5px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.25);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #282d36;
+}
+.imeless-txt {
+    position: absolute;
+    color: #a90000;
+    top: 3%;
+    left: 40px;
+    font-family: sans-serif;
+}
+li, a {
+    font-family: 'Anton', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+.nav__links {
+    list-style: none;
+}
+
+.nav__links li {
+    display: inline-block;
+    padding: 0px 20px;
+    transition: all 0.3s ease 0s;
+}
+
+.nav__links li a {
+    transition: all 0.3s ease 0s;
+    padding: 10px;
+    background-color: rgba(0, 136, 169, 0);
+    border: 2px solid;
+    border-radius: 50px;
+}
+
+.nav__links li a:hover {
+    color: #a90000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#footer {
+    font-family: sans-serif;
+    position: absolute;
+    text-align: center;
+    top: 130%;
+    left: 48.0%;
+    background: linear-gradient(90deg, red, #000000, #ff0037, #ff0000, #000000);
+    background-size: 400%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: animate 3s linear infinite;
+    transition: ease-out 0.3s;
+}
+@keyframes animate{
+    0%{
+        background-position: 0%;
+    }
+    100%{
+        background-position: 100%
+    }
+}
